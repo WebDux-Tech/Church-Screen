@@ -63,10 +63,12 @@ export default function Home() {
 
 
 const handleSubmit = () => {
-    if(videoRef && videoRef.current && videoRef.current){
-        videoRef.current.play();
-    }
-  setShowVideo(true);
+
+  window.location.href = `https://onthemoons.graphity.world/zgMc49t/calm-joyful-vacation?avatarId=${avatar}&name=${name}`;
+//     if(videoRef && videoRef.current && videoRef.current){
+//         videoRef.current.play();
+//     }
+//   setShowVideo(true);
 };
 
   function handleVideoEnd() {
@@ -76,7 +78,6 @@ setShowSkip(true);
 
 setTimeout(() => {
 //   window.open(`https://onthemoons.graphity.world/zgMc49t/calm-joyful-vacation?avatarId=${avatar}&name=${name}`);
-  window.location.href = `https://onthemoons.graphity.world/zgMc49t/calm-joyful-vacation?avatarId=${avatar}&name=${name}`;
 }, 1000);
     // window.open(`https://onthemoons.graphity.world/zgMc49t/calm-joyful-vacation?avatarId=${avatar}&name=${name}`);
     // setShowVideo(false);
